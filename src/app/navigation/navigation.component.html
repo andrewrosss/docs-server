@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
+            <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+        <span class="toolbar-title">Performance Phenomics <span class="toolbar-title-heavy">Docs</span></span>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container class="example-container">
+    <mat-sidenav #drawer mode="over" opened role="navigation">
+        <mat-nav-list color='primary'>
+            <a mat-list-item href="#">Link 1</a>
+            <a mat-list-item href="#">Link 2</a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <iframe src="../../assets/pipe_inputs/index.html" frameborder="0"></iframe>
+    </mat-sidenav-content>
+</mat-sidenav-container>
