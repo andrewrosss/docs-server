@@ -8,13 +8,18 @@
         </mat-toolbar>
 
         <mat-nav-list class="sidenav-list">
-            <a mat-list-item href="#">Link 1</a>
-            <a mat-list-item href="#">Link 2</a>
+            <!-- This is a fake link, it's a temporary fix because angular material
+            always tried to highlight the first link in the link when the sidnav
+            is opened -->
+            <a mat-list-item href="#" style="height: 0;"></a>
+            <!--  -->
+            
+            <a mat-list-item *ngFor="let repo of repos" href="#" (click)="setContent(repo)">{{ repo.prettyName }}</a>
         </mat-nav-list>
     </mat-sidenav>
 
     <mat-sidenav-content>
-        <iframe src="../../../assets/pipe_inputs/index.html" frameborder="0"></iframe>
+        <iframe src="" frameborder="0"></iframe>
     </mat-sidenav-content>
 
 </mat-sidenav-container>
