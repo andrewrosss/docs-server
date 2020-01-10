@@ -1,3 +1,10 @@
 .sidenav-list {
     min-width: 200px;
 }
+
+iframe {
+    display: block;
+    border: none;         /* Reset default border */
+    height: 100%;        /* Viewport-relative units */
+    width: 100%;
+}
