@@ -25,7 +25,7 @@ export class RepoService {
   }
 
   getRepoContentPath(repo: Repo): string {
-    return "assets/" + repo.name + "/" + repo.indexFile;
+    return "assets/serve/" + repo.name + "/" + repo.indexFile;
   }
 
 }
