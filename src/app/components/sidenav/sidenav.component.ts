@@ -22,12 +22,6 @@ export class SidenavComponent implements OnInit {
   ngOnInit() {
     this.sidenavService.setSidenav(this.sidenav);
     this.repos = this.repoService.getRepos();
-    this.setContent(this.repoService.getSelectedRepo())
-  }
-
-  setContent(repo: Repo) {
-    const iframe = this.hostElement.nativeElement.querySelector('iframe');
-    iframe.src = this.repoService.getRepoContentPath(repo);
   }
 
 }

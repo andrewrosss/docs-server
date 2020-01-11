@@ -12,22 +12,19 @@
             <h2 matSubheader> Repositories </h2>
 
             <!-- This is a fake link, it's a temporary fix because angular material
-            always tried to highlight the first link in the link when the sidnav
+            always tries to highlight the first link in the link when the sidnav
             is opened -->
             <a mat-list-item href="#" style="height: 0;"></a>
             <!--  -->
 
-            <a mat-list-item 
-            *ngFor="let repo of repos" 
-            href="#" 
-            (click)="setContent(repo)">
+            <a mat-list-item *ngFor="let repo of repos" (click)="sidenav.close()" [routerLink]="[repo.name]">
                 <mat-icon matListIcon>folder</mat-icon> {{ repo.prettyName }}
             </a>
         </mat-nav-list>
     </mat-sidenav>
 
     <mat-sidenav-content>
-        <iframe src="" frameborder="0"></iframe>
+        <router-outlet></router-outlet>
     </mat-sidenav-content>
 
 </mat-sidenav-container>
