@@ -8,12 +8,14 @@ import { MaterialModule } from './material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { RepoIframeComponent } from './components/repo-iframe/repo-iframe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     SidenavComponent,
+    RepoIframeComponent,
   ],
   imports: [
     BrowserModule,
