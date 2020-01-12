@@ -9,6 +9,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { RepoIframeComponent } from './components/repo-iframe/repo-iframe.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { RepoIframeComponent } from './components/repo-iframe/repo-iframe.compon
     ToolbarComponent,
     SidenavComponent,
     RepoIframeComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,

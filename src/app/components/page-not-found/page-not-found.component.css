@@ -1,0 +1,14 @@
+.four04 {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 4em;
+    font-weight: bold;
+    color: #b5b5b5;
+    padding: 0 0.25em;
+    text-align: center;
+}
+
+.four04-text {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 1em;
+    color: #555555;
+}
