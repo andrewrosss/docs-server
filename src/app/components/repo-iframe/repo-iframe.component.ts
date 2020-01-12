@@ -2,6 +2,7 @@ import { Component, OnInit, ElementRef } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Repo } from 'src/app/repo';
 import { RepoService } from 'src/app/services/repo.service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-repo-iframe',
@@ -15,12 +16,15 @@ export class RepoIframeComponent implements OnInit {
   constructor(
     private activatedroute: ActivatedRoute,
     private repoService: RepoService,
-    private hostElement: ElementRef) { }
+    private hostElement: ElementRef,
+    private titleService: Title) { }
 
   ngOnInit() {
     this.activatedroute.data.subscribe(data => {
       this.repo = data as Repo;
-      this.setContent(this.repo)})
+      this.titleService.setTitle(this.repo.prettyName);
+      this.setContent(this.repo);
+    })
   }
 
   setContent(repo: Repo) {
