@@ -1,0 +1,10 @@
+Adding Sites to DocsServer
+==========================
+
+Adding a new site to DocsServer requires modifications/addtions in two locations.
+
+- src/app/repo-manifest.ts
+- src/assets/serve/
+
+.. toctree::
+   :maxdepth: 2

@@ -1,4 +1,4 @@
-import { Repo } from './repo';
+import { Repo } from "./repo";
 
 export const REPOS: Repo[] = [
     {
@@ -10,5 +10,10 @@ export const REPOS: Repo[] = [
         name: "qserver-dicom-etl",
         prettyName: "QServer DICOM ETL",
         indexFile: "index.html",
+    },
+    {
+        name: "docs-server",
+        prettyName: "DocsServer",
+        indexFile: "index.html"
     }
 ]
