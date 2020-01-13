@@ -151,7 +151,17 @@
             
   <div class="section" id="deployment">
 <h1>Deployment<a class="headerlink" href="#deployment" title="Permalink to this headline">¶</a></h1>
-<p>How to build and deploy DocsServer to a hosting platform …</p>
+<p>TODO: setting up firebase, so that we can deploy there.</p>
+<p>Deploying an updated build to firebase hosting is simple.</p>
+<p>We first have to update the <code class="docutils literal notranslate"><span class="pre">dist/</span></code> folder with the fresh content. This is acheived by running the following command from the root of the project:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ng build --prod
+</pre></div>
+</div>
+<p>Then we push to firebase using the firebase CLI, as follows:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>firebase deploy
+</pre></div>
+</div>
+<p>Again, the above command should be run in the root of the project.</p>
 <div class="toctree-wrapper compound">
 </div>
 </div>
