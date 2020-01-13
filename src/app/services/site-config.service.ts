@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class SiteConfigService {
 
-  public toolbarTitle: string = 'Andrewrosss';
+  public toolbarTitle: string = 'Performance Phenomics';
 
   constructor() { }
 }
