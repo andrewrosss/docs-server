@@ -17,7 +17,7 @@
             <a mat-list-item href="#" style="height: 0;"></a>
             <!--  -->
 
-            <a mat-list-item *ngFor="let repo of repos" (click)="sidenav.close()" [routerLink]="[repo.name]">
+            <a mat-list-item *ngFor="let repo of repos" (click)="sidenav.close()" [routerLink]="['/docs', repo.name]">
                 <mat-icon matListIcon>folder</mat-icon> {{ repo.prettyName }}
             </a>
         </mat-nav-list>

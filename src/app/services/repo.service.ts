@@ -28,4 +28,8 @@ export class RepoService {
     return `assets/serve/${repo.name}/${repo.indexFile}`;
   }
 
+  getRepoByName(repoName: string): Repo {
+    return this.repos.find((repo) => { return repo.name == repoName })
+  }
+
 }

@@ -20,11 +20,11 @@ export class RepoIframeComponent implements OnInit {
     private titleService: Title) { }
 
   ngOnInit() {
-    this.activatedroute.data.subscribe(data => {
-      this.repo = data as Repo;
+    this.activatedroute.paramMap.subscribe(params => {
+      this.repo = this.repoService.getRepoByName(params.get('repoName'));
       this.titleService.setTitle(this.repo.prettyName);
       this.setContent(this.repo);
-    })
+    });
   }
 
   setContent(repo: Repo) {
