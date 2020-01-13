@@ -2,6 +2,11 @@ import { Repo } from "./repo";
 
 export const REPOS: Repo[] = [
     {
+        name: "dev-docs",
+        prettyName: "Developer Docs",
+        indexFile: "index.html",
+    },
+    {
         name: "pipe_inputs",
         prettyName: "Pipe Inputs",
         indexFile: "index.html",
