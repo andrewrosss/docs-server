@@ -1,5 +1,7 @@
 # DocsServer
 
+This repo houses code for a small angular application that contains other statically generated sites.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
 
 ## Development server
